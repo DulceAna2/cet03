@@ -1,0 +1,7 @@
+body{
+    background-color: #ffe5ec}
+
+h1, p, a , ul, dt, dd { color:#fb6f92;}
+h1 {text-align: center;}
+/*text-indent: ; agrega sangria*/
+p{font-size: 1.2em;}

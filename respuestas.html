@@ -5,75 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>03</title>
+    <link rel="stylesheet" href="estilo.CSS">
     <style>
-        #fondo{
-            background-color: aliceblue;
+        /* picture {
+            display: flex;
+            justify-content: right;
+        } lugar de la imagen */
+
+        p a {
+            color: purple;
+            text-decoration: none;
         }
-       p  a {  
-color: purple;  
-text-decoration: none;
-} // da color a una etiqueta particular
-p{color: aquamarine;} // da color "a" la etiqueta "p"  
- </style>
+
+        /* da color a una etiqueta particular*/
+
+
+        /*da color etiqueta p */
+
+        /* REGLA DE CSS
+        Selector¨{
+            propiedad:valor:
+            propiedad2:valor_2:
+        }
+        SELECTOR POR ETIQUETA
+        h1{
+            color:blue
+            tex-align:center/*alineacion de texto
+            font-size: 1em;/*cambia tamaño a la letra
+            text-decoration:
+        }
+        */
+        .padre {
+            display: flex;
+            justify-content: left;
+
+        }
+
+        .hijo {
+            padding: 20px;
+            margin-bottom: 20px;
+
+        }
+    </style>
 </head>
 
-<body id="fondo">
-    <p><a href="hola.html">hola</a></p>
+<body>
+    <h1>🌻Trabajo Practico 03🌻</h1>
+    <h1>🌻Dulce Ana Vigna Coronel🌻</h1>
     <!--Pregunta 1.1-->
-    <h1>¿Qué significa CSS?</h1>
-    <p>Las Hojas de estilo en cascada (del ingles Cascading Stylesheets CSS). Es un lenguaje que sirve para describir la presentacion, el "estilo" de los documentos.</p>
+    <h1 class="centrado
+    ">🌷¿Qué significa CSS?</h1>
+    <p>Las Hojas de estilo en cascada (del ingles Cascading Stylesheets CSS). Es un lenguaje que sirve para describir la
+        presentacion, el "estilo" de los documentos.</p>
     <br>
 
     <!--Pregunta 1.2-->
-    <h1>¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h1>
+    <h1>🌺¿Para qué sirve el CSS?¿Qué programa se utiliza para interpretar el CSS?</h1>
+    <p>Se utiliza CSS para el diseño grafico, para definir y crear la presentacion de la pagina web. Osea hace que se
+        vea mas atractivo visualmente</p>
+    <p>El programa que se utiliza para intepretar CSS es el navegador</p>
     <br>
 
     <!--Pregunta 1.3-->
-    <h1>¿A qué se llama regla de CSS? </h1>
+    <h1>🏵️¿A qué se llama regla de CSS? </h1>
+    <p>Los CSS estarán ordenados por reglas. Las reglas son un conjunto de propiedades y valores que se aplicarán a una
+        o varias etiquetas según se necesite. Se le llama regla al conjunto de llaves,selectores, propiedades y sus
+        respectivos valores</p>
+
     <br>
 
     <!--Pregunta 1.4-->
-    <h1>¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva explicar
+    <h1>🪷¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva
+        explicar
         sus elementos.</h1>
+    <div class="padre">
+        <div class="hijo">
+            <img src="assets/img/regla.jpeg" alt="" width="400">
+        </div>
+        <div class="hijo">
+            <dl>
+                <dt>La regla está compuesta por los siguiente elementos:</dt>
+                <dt> <strong>Selector:</strong> </dt>
+                <dd>Se selecciona al elemento o los elementos que se le quiere dar estilo.</dd>
+                <dt><strong>Declaración:</strong></dt>
+                <dd>Al o los elementos que se selecciono se le aplica las propiedades que se desee. Puede haber mas de
+                    uno.</dd>
+                <dt><strong>Propiedades:</strong></dt>
+                <dd>Es lo que permite dar un estilo a un elemento HTML.Siempre las propiedades se ubicarán a la
+                    izquierda.</dd>
+                <dt><strong>Valor de la propiedad:</strong></dt>
+                <dd>Las propiedades deben tener un valor. Cada propiedad tiene valores definidos. Cada valor se ubicará
+                    a la
+                    derecha.</dd>
+            </dl>
+        </div>
+
+    </div>
     <br>
 
     <!--Pregunta 1.5-->
-    <h1>¿Qué es un selector en CSS? </h1>
+    <h1>🌼¿Qué es un selector en CSS? </h1>
     <br>
 
     <!--Pregunta 1.6-->
-    <h1>Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h1>
+    <h1>🍀Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h1>
     <br>
 
     <!--Pregunta 1.7-->
-    <h1>Explicar brevemente utilizando una lista ordenada: ¿Cómo funciona el CSS? </h1>
+    <h1>🍁Explicar brevemente utilizando una lista ordenada: ¿Cómo funciona el CSS? </h1>
     <br>
 
     <!--Pregunta 1.8-->
-    <h1>¿Cuáles son las tres formas para vincular CSS con HTML?</h1>
+    <h1>🌹¿Cuáles son las tres formas para vincular CSS con HTML?</h1>
     <br>
     <!--Pregunta 1.9-->
-    <h1>Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los siguientes
+    <h1>💐Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
+        siguientes
         pasos:
-       
+
     </h1>
-    <p><strong> <ul>
-        <li>Hacer clic en View All Designs
-        <li> Elegir dos diseños y abrirlo en pestañas distintas
-        <li> En el primer diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el navegador)
-        <li> En el segundo diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el
-            navegador)
-        <li> Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿Son iguales? ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño?
-<p>lo que contribuye al cambio es el CSS</p>
-        <li> Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos?
-        <li> En líneas generales, el mismo HTML ¿Puede tener diferentes diseños?
-        </li>
-    </ul></strong></p>
+    <p><strong>
+            <ul>
+                <li>Hacer clic en View All Designs
+                <li> Elegir dos diseños y abrirlo en pestañas distintas
+                <li> En el primer diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el
+                    navegador)
+                <li> En el segundo diseño presiona ctrl+u (esta combinación de teclas permite ver el código HTML en el
+                    navegador)
+                <li> Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿Son
+                    iguales? ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño?
+                    <p>lo que contribuye al cambio es el CSS</p>
+                <li> Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos?
+                <li> En líneas generales, el mismo HTML ¿Puede tener diferentes diseños?
+                </li>
+            </ul>
+        </strong></p>
     <p>El primer diseño que elegi es:</p> <a href="http://www.csszengarden.com/219/">Visualizar diseño</a>
     <p>El segundo diseño que elegi es:</p><a href="http://www.csszengarden.com/218/">Visualizar diseño</a>
     <br>
-    <p></p>
-</body >
+    
+
+</body>
 
 </html>
