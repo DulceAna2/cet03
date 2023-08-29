@@ -1,0 +1,20 @@
+body{
+    background-color: #ffe5ec}
+
+h1, p, a , ul, dt, dd, dl, ul, ol { color:#fb6f92;
+    }
+h1 {text-align: center;}
+/*text-indent: ; agrega sangria*/
+p{font-size: 1.2em;}
+
+.padre {
+    display: flex;
+    justify-content: left;
+
+}
+
+.hijo {
+    padding: 20px;
+    margin-bottom: 20px;
+
+}

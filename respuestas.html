@@ -6,23 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>03</title>
-    <link rel="stylesheet" href="estilo.CSS">
+    <link rel="stylesheet" href="style.CSS">
     <style>
         /* picture {
             display: flex;
             justify-content: right;
         } lugar de la imagen */
-
-        p a {
-            color: purple;
-            text-decoration: none;
-        }
-
-        /* da color a una etiqueta particular*/
-
-
-        /*da color etiqueta p */
-
         /* REGLA DE CSS
         Selector¨{
             propiedad:valor:
@@ -36,17 +25,6 @@
             text-decoration:
         }
         */
-        .padre {
-            display: flex;
-            justify-content: left;
-
-        }
-
-        .hijo {
-            padding: 20px;
-            margin-bottom: 20px;
-
-        }
     </style>
 </head>
 
@@ -96,8 +74,7 @@
                     izquierda.</dd>
                 <dt><strong>Valor de la propiedad:</strong></dt>
                 <dd>Las propiedades deben tener un valor. Cada propiedad tiene valores definidos. Cada valor se ubicará
-                    a la
-                    derecha.</dd>
+                    a la derecha.</dd>
             </dl>
         </div>
 
@@ -106,24 +83,96 @@
 
     <!--Pregunta 1.5-->
     <h1>🌼¿Qué es un selector en CSS? </h1>
+    <p>Un selector es la primera parte de una regla CSS. Este selecciona elementos, atributos, indicando que a estos se
+        les aplicara estilos </p>
     <br>
 
     <!--Pregunta 1.6-->
     <h1>🍀Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h1>
+    <dl>
+        <dt><strong>Selectores</strong></dt>
+        <dt><strong>Selector de identificación (ID)</strong></dt>
+        <dd>El selector ID busca un elemento basado en el atributo ID. </dd>
+        <dd>EJ:</dd>
+        <dd>#fondo{color:blue}</dd>
+        <dd>body id="#fondo>"/dd>
+        <dt><strong>Selector de clase</strong></dt>
+        <dd>Los selectores de clase permiten seleccionar todos los elementos que tienen un mismo nombre de clase. </dd>
+        <dd>.nombre de clase { propiedades de estilo }</dd>
+        <dt><strong>Selector Universal</strong></dt>
+        <dd>El asterico(*) es el selector universal en CSS. El asterisco selecciona todos los elementos de un
+            elemento.Sus sintaxis son:</dd>
+        <ul>
+            <li>
+                * o *|* { propiedades de estilo } (selecciona todos los elementos)
+            <li> ns|* { propiedades de estilo } (selecciona todos los elementos en el espacio de nombre (ns))
+            <li> |* { propiedades de estilo } (selecciona todos los elementos sin algún espacio de nombre definido)
+            </li>
+        </ul>
+        <dt><strong>Selector de Etiqueta</strong></dt>
+        <dd>Los selectores de etiqueta son aquellos que permiten aplicar estilos a todas las etiquetas de un tipo</dd>
+        <dd>EJ</dd>
+        <dd>h1, p,{ color:#fb6f92;}</dd>
+        <dt><strong>Selector Descendente</strong></dt>
+        <dd>Selecciona los elementos que se encuentran dentro de otros elementos. </dd>
+        <dd>EJ</dd>
+        <dd>p a {font-size: 1.2em;}</dd>
+    </dl>
     <br>
 
     <!--Pregunta 1.7-->
     <h1>🍁Explicar brevemente utilizando una lista ordenada: ¿Cómo funciona el CSS? </h1>
+    <ol>
+        <li>El navegador carga el HTML
+        <li>Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria
+            del ordenador.
+        <li> El navegador va a buscar la mayor parte de los recursos vinculados al documento HTML(imagenes, videos y el
+            CSS incrustado).
+        <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector
+        <li> El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las
+            reglas.
+        <li> En la pantalla se muestra el aspecto visual de la página </li>
+
+    </ol>
     <br>
 
     <!--Pregunta 1.8-->
     <h1>🌹¿Cuáles son las tres formas para vincular CSS con HTML?</h1>
+    <ol>
+        <li><strong>Vincular una hoja de estilo CSS utilizando el elemento HEAD</strong></li>
+        <ul>
+            <li>Adentro de HEAR se utiliza el elemento
+            <li>(head)(link rel="stylesheet" type="text/css" href="URL")(/head)
+            <li>El atributo rel especifica el tipo de recurso que se está vinculando y el valor “stylesheet” indica que
+                se trata de una hoja de estilo CSS.
+            <li>El atributo type especifica el tipo de contenido del recurso vinculado y la extencion css indica que se
+                trata de un archivo CSS.</li>
+            </li>
+        </ul>
+        <li><strong>Vincular tus estilos CSS utilizando la etiqueta style</strong></li>
+        <ul>
+            <li>El segundo método para añadir estilos CSS en HTML es utilizar las etiquetas
+            <li>(head)(style) p {color:red; font-size:20px;} (/style)(/head)
+        </ul>
+        <li><strong>Utilizando el atributo style</strong></li>
+        <ul>
+            <li>En nuestro HTML aplicaremos estilos directamente a la etiqueta. </li>
+            <li>EJ</li>
+            <li>(html)
+                (head)
+                (meta charset="utf-8")
+                (title>Mi pagina de prueba(/title)
+                (/head)
+            <li>(body)(p style="color:red;">Esto es un párrafo rojo(/p)(/body)(/html)
+
+            </li>
+        </ul>
+    </ol>
     <br>
+
     <!--Pregunta 1.9-->
     <h1>💐Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
-        siguientes
-        pasos:
-
+        siguientes pasos:
     </h1>
     <p><strong>
             <ul>
@@ -135,7 +184,6 @@
                     navegador)
                 <li> Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿Son
                     iguales? ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño?
-                    <p>lo que contribuye al cambio es el CSS</p>
                 <li> Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos?
                 <li> En líneas generales, el mismo HTML ¿Puede tener diferentes diseños?
                 </li>
@@ -143,9 +191,41 @@
         </strong></p>
     <p>El primer diseño que elegi es:</p> <a href="http://www.csszengarden.com/219/">Visualizar diseño</a>
     <p>El segundo diseño que elegi es:</p><a href="http://www.csszengarden.com/218/">Visualizar diseño</a>
+    <p>En cuanto al HTML tienen el mismo codigo, osea que su escritura es igual. Lo que contribuye al cambio en estos
+        dos HTML que son iguales es el CSS.</p>
+    <p>Al abrir los dos archivos CSS me doy cuento que al contrario del HTML , el CSS son dos archivos diferentes. El
+        CSS modifica la presentacion de todos esos elementos que compone una web</p>
+    <p>Como en los ejemplos que nos presentaron , viendo el codigo se puede ver a simple vista que con el mismo HTML se
+        puede obtener diferentes diseños gracias al CSS</p>
     <br>
-    
-
+    <!--Pregunta 2.0-->
+    <h1>🌸Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada propiedad.
+    </h1>
+    <dl>
+        <dt><strong>Propiedad : Color</strong></dt>
+        <dd>Valores posibles: #0000ff (Azul) o #ff0000 (rojo)</dd>
+        <dt><strong>Propiedad: background-color</strong></dt>
+        <dd>RGB (209, 31, 31) (rojo) o RGB (22, 37, 201) (Azul)</dd>
+        <dt><strong>Propiedad:font-size</strong></dt>
+        <dd>Valores Posibles: 1.2em o large</dd>
+        <dt><strong>Propiedad: font-weight</strong></dt>
+        <dd>Valores: "bold" o "100"</dd>
+        <dt><strong>Propiedad: font-style</strong></dt>
+        <dd> Valores Posibles "initial" o "inherit"</dd>
+        <dt><strong>Propiedad: font-family</strong></dt>
+        <dd> Valores Posibles: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" o "'Trebuchet MS', 'Lucida
+            Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"</dd>
+        <dt><strong>Propiedad:text-align</strong></dt>
+        <dd>Valores Posibles: "center" o "left" </dd>
+        <dt><strong>Propiedad: text-decoration</strong></dt>
+        <dd>Valores Posibles: "line" o "none" </dd>
+        <dt><strong>Propiedad: text-transform</strong></dt>
+        <dd>Valores Posibles:"uppercase" o "lowercase"</dd>
+        <dt><strong>Propiedad:letter-spacing</strong></dt>
+        <dd>Valores Posibles: "0.1em" o "-0.1em"</dd>
+        <dt><strong>Propiedad:line-height</strong></dt>
+        <dd>Valores Posibles:"150%" o "25px"</dd>
+    </dl>
 </body>
 
 </html>
