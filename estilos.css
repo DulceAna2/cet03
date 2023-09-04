@@ -9,15 +9,14 @@ body {
     font-size: 16px;
 }
 
-h1,
+h1
 {
 font-size: 36px;
 color: #061542;
 }
 
 /*Cambia todos los h1 y p que hay en el codigo*/
-p,
-h2 {
+p,h2 {
     color: #061542;
 }
 
@@ -33,10 +32,12 @@ h2 {
     color: yellow;
     background-color: black;
 }
+/*Cambia el color de la letra y su fondo*/
 picture {
     display: flex;
     justify-content: center;
 }
+/*Cambia la posicion de la foto*/
 
 
-/*Cambia el color de la letra y su fondo*/
+
