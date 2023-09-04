@@ -1,28 +1,42 @@
 /* Comentario en CSS*/
-<style>
-        .centrado {
-            text-align: center;
-        }
-        body {
-            background-color: #B3F6AA;
-            font-size: 16px;
-        }
-        h1, {
-            font-size: 36px;
-            color: #061542;
-        }/*Cambia todos los h1 y p que hay en el codigo*/
-        p, h2{
-            color:#061542;
-        }
-        .encabezado {
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 42px;
-            color: #061542;
-        }
-        #yellow {
-            color:yellow;
-            background-color: black;
-        }/*Cambia el color de la letra y su fondo*/
-    </style>
+
+.centrado {
+    text-align: center;
+}
+
+body {
+    background-color: #B3F6AA;
+    font-size: 16px;
+}
+
+h1,
+{
+font-size: 36px;
+color: #061542;
+}
+
+/*Cambia todos los h1 y p que hay en el codigo*/
+p,
+h2 {
+    color: #061542;
+}
+
+.encabezado {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 42px;
+    color: #061542;
+}
+
+#yellow {
+    color: yellow;
+    background-color: black;
+}
+picture {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Cambia el color de la letra y su fondo*/
